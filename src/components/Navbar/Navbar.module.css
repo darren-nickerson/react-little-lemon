@@ -1,0 +1,150 @@
+.desktop {
+  display: none;
+}
+
+.mobile .topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--size-80);
+  padding: 0 15px;
+  background-color: var(--white-color);
+  z-index: 1000;
+  border-bottom: 1px solid var(--border-color-light);
+}
+
+.mobile .navlinks {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: var(--size-30);
+}
+
+.mobile .navlinks ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile .navlinks li {
+  padding-top: var(--size-30);
+  padding-bottom: var(--size-30);
+  border-bottom: 1px solid var(--border-color-light);
+}
+
+.mobile .navlinks li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.mobile .navlinks ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.mobile .icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  padding-top: var(--size-10);
+}
+
+.mobile .logo {
+  height: 35px;
+}
+
+@media screen and (max-width: 300px) {
+  .mobile .topbar {
+    flex-direction: column-reverse;
+    padding: var(--size-15) 0;
+    height: var(--size-120);
+  }
+  .mobile .icon:last-child {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color);
+    height: var(--size-80);
+    padding: 0 var(--size-15);
+  }
+
+  .desktop .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .desktop .logo img {
+    height: var(--size-40);
+    margin-right: var(--size-20);
+  }
+
+  .desktop .navlinks {
+    display: flex;
+    align-items: center;
+  }
+
+  .desktop .navlinks ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .desktop .navlinks li {
+    margin-right: var(--size-30);
+  }
+
+  .desktop .navlinks li a {
+    font-family: "markazi text" !important;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .desktop .icon {
+    font-size: 1.4rem;
+    padding-top: var(--size-5);
+    color: var(--primary-color);
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+
+
+/* Styles for not-active links */
+
+
+.not_active {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: var(--size-5) var(--size-15);
+
+}
+
+.active {
+  background-color: #495e571b;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: var(--size-5) var(--size-15);
+}
+
+li a:not(.active):hover {
+  background-color: #495e571b;;
+}
+
+  nav ul li a:not(.active):hover {
+    background-color: #495e571b;;  }

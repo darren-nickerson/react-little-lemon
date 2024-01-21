@@ -1,0 +1,142 @@
+/*  colour for the website */
+
+:root {
+  --primary-color: #495e57;
+  --secondary-color: #f4ce14;
+  --accent-color-dark: #ee9972;
+  --accent-color-light: #fbdabb;
+  --background-color: #edefee;
+  --text-color: #333333;
+  --white-color: #fff;
+
+  --border-color-light: #e0e0e0;
+  --border-color-dark: #333;
+
+  --size-5: 5px;
+  --size-10: 10px;
+  --size-15: 15px;
+  --size-20: 20px;
+  --size-30: 30px;
+  --size-40: 40px;
+  --size-50: 50px;
+  --size-60: 60px;
+  --size-70: 70px;
+  --size-80: 80px;
+  --size-90: 90px;
+  --size-100: 7.58150113722517vh;
+  --size-120: 120px;
+}
+
+/* Simplest CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base font size for all devices */
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Responsive font sizes using media queries */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Heading styles */
+h1,
+h2,
+h3 {
+  font-family: "Markazi Text", serif;
+  font-weight: bold;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraph and text styles */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Additional text styles */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Link styles */
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* Styles for active links */
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: var(--size-15) var(--size-30);
+  font-family: "Karla", sans-serif;
+  border-radius: 6px;
+  border: 1px solid var(--border-color-dark);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+  filter: brightness(
+    90%
+  ); /* Slightly darkened by default for subtle shadow effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+  filter: brightness(100%); /* Restored to full brightness on hover */
+}

@@ -1,0 +1,44 @@
+.bookingReceiptContainer {
+    text-align: center;
+  }
+  
+  .heading {
+    padding-top: var(--size-50);
+    padding-bottom: var(--size-20);
+
+    color: var(--text-color);
+  }
+  
+  .receiptContent {
+    background-color: var(--background-color); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    padding: var(--size-100);
+  }
+  
+  .noData {
+    color: #dc3545;
+    margin-top: var(--size-100)
+  }
+
+  .receipt_container {
+    border: 1px solid var(--border-color-light);
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: var(--size-20);
+    background-color: var(--white-color);
+    border-radius: 16px;
+  }
+
+  .back_button {
+    margin-bottom: var(--size-20)
+  }
+
+  .confirmation_message {
+    color: var(--primary-color);
+    font-size: var(--size-15);
+    padding: var(--size-10) var(--size-30)
+  }

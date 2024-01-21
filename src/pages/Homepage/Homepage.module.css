@@ -1,0 +1,63 @@
+/* styles.module.css */
+
+.menu_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--size-30);
+  list-style: none;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  .menu_items {
+    grid-template-columns: 1fr; /* Adjust as needed for smaller screens */
+  }
+}
+
+.title_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: var(--size-15);
+  padding-left: var(--size-15);
+  margin-bottom: var(--size-20);
+}
+
+.title_row button {
+  margin-bottom: var(--size-10);
+}
+
+@media screen and (max-width: 600px) {
+  .title_row {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--size-20);
+  }
+}
+
+.review_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--size-30);
+  list-style: none;
+  padding: 15px;
+}
+
+@media (max-width: 1120px) {
+  .review_items {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Adjust as needed for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .review_items {
+    grid-template-columns: 1fr; /* Adjust as needed for smaller screens */
+  }
+}
+
+.hero_items {
+  list-style: none;
+}
