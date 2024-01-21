@@ -1,8 +1,11 @@
 # Little Lemon Meta Capstone Project - Frontend
 
-
 Little Lemon Meta Capstone Project - Frontend README
 Welcome to the Little Lemon Restaurant website with a Table Booking System, developed as part of the Facebook Meta Certification project. This application is designed to meet the certification criteria and provide an efficient and user-friendly table booking experience. The README provides essential information for setting up, using, and contributing to the project.
+
+## Live Site
+https://react-little-lemon-restaurant.onrender.com/
+
 
 ## Technologies Utilized
 
